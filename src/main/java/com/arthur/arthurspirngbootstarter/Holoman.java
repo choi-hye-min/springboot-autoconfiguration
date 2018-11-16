@@ -5,6 +5,19 @@ public class Holoman {
     String name;
     int howLong;
 
+    String catName;
+    int catAge;
+
+    @Override
+    public String toString() {
+        return "Holoman{" +
+                "name='" + name + '\'' +
+                ", howLong=" + howLong +
+                ", catName='" + catName + '\'' +
+                ", catAge=" + catAge +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
@@ -21,11 +34,19 @@ public class Holoman {
         this.howLong = howLong;
     }
 
-    @Override
-    public String toString() {
-        return "Holoman{" +
-                "name='" + name + '\'' +
-                ", howLong=" + howLong +
-                '}';
+    public String getCatName() {
+        return catName;
+    }
+
+    public void setCatName(String catName) {
+        this.catName = catName;
+    }
+
+    public int getCatAge() {
+        return catAge;
+    }
+
+    public void setCatAge(int catAge) {
+        this.catAge = catAge;
     }
 }
